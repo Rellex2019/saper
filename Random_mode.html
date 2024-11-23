@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рандом мод</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="conteiner_main">
+<div class="conteiner_board">
+	<div class="cont_instruction">
+		<div class="instruction">
+		<h2>Управление</h2>
+		<p>ЛКМ - Открыть клетку<br>
+		ПКМ - поставить флаг</p>
+	</div>
+	<div class="settings">
+		<label for="boardSize">Размер поля:</label><br>
+		<input id="boardSize" type="range" value="10" min="4" max="16" list="markers">
+		<datalist id="markers">
+			<option value="4" label="4"></option>
+			<option value="8" label="8"></option>
+			<option value="12" label="12"></option>
+			<option value="16" label="16"></option>
+		  </datalist>
+		<fieldset>
+			<input type="radio" id="easy" name="difficulty" value="0.1" class="difficulty">
+			<label for="easy">Легко</label> 
+			<input type="radio" id="normal" name="difficulty" value="0.2" class="difficulty" checked>
+			<label for="normal">Нормально</label>
+			<input type="radio" id="hard" name="difficulty" value="0.4" class="difficulty">
+			<label for="hard">Сложно</label> 
+		</fieldset>
+		<p class="diff_change">Шанс появления бомбы в каждой клетке 20%</p>
+		<a href="#!" class="minesweeper-btn">Новая игра</a>	
+	</div> 	
+	</div>
+<div class="board-wrap">
+	<div class="board"></div>
+</div>
+</div>
+<div class="endscreen"></div>
+<script src="js/function.js"></script>
+</div>
+
+</body>
+</html>
